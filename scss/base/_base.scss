@@ -4,13 +4,9 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
   
-  @include mq(md) {
-    font-size: vw(375px, 16px);
-  }
 }
 
 body {
-  background-color: $color-bg;
   font-family: $base-font-family;
   color: $color-black;
   line-height: calc(36 / 16);
