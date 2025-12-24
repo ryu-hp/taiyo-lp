@@ -252,7 +252,7 @@ MV
 === */
 #lp2 .mv {
   background-image: url(https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/google-cta-image-01.webp);
-  background-size: cover;
+  background-size: contain;
   background-position: bottom center;
   background-repeat: no-repeat;
   position: relative;
@@ -275,6 +275,9 @@ MV
   width: 137.3684210526%;
   z-index: -1;
   height: 100%;
+  background-color: #FFFCE5;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
 }
@@ -302,6 +305,7 @@ MV
 #lp2 .mv__google-contents img {
   width: 76.4948453608%;
   margin-left: auto;
+  margin-right: 0;
 }
 #lp2 .mv__ceo-image {
   position: absolute;
