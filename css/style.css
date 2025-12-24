@@ -217,27 +217,17 @@ select::-ms-expand {
   display: none;
 }
 
-.lp1 h2 {
-  border-top-color: transparent;
-  border-top: none !important;
-  font-family: "Noto Serif JP", serif !important;
-  background: transparent;
-  padding: 0;
-  border-bottom: none;
-}
-.lp1 h3 {
-  border-bottom: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  padding-bottom: 0;
-  font-family: "Noto Serif JP", serif !important;
-}
-.lp1 h3::after {
-  display: none;
+div#contents {
+  width: 100% !important;
+  margin: 0 !important;
+  max-width: 100% !important;
+  padding: 0 !important;
 }
 
-.vk-mobile-nav-menu-btn {
-  display: none !important;
+div#main {
+  width: 100% !important;
+  float: none;
+  max-width: 100%;
 }
 
 .lp-width-container {
@@ -251,7 +241,7 @@ select::-ms-expand {
 MV 
 === */
 #lp2 .mv {
-  background-image: url(https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/google-cta-image-01.webp);
+  background-image: url(https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/mv-bg-image.webp);
   background-size: contain;
   background-position: bottom center;
   background-repeat: no-repeat;
