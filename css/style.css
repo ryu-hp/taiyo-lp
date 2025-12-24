@@ -240,6 +240,94 @@ select::-ms-expand {
   display: none !important;
 }
 
+.lp-width-container {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 20px;
+}
+
+/* ===
+MV 
+=== */
+#lp2 .mv {
+  background-image: url(https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/google-cta-image-01.webp);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#lp2 .mv__top-area {
+  position: relative;
+  padding-top: 10.6578947368%;
+  padding-bottom: 10.2631578947%;
+  z-index: 1;
+  overflow: hidden;
+}
+#lp2 .mv__top-area::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 137.3684210526%;
+  z-index: -1;
+  height: 100%;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+}
+#lp2 .mv__area-content {
+  width: 76.8421052632%;
+  margin-right: auto;
+  margin-left: auto;
+}
+#lp2 .mv__main-copy {
+  width: 88.1578947368%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1.25em;
+}
+#lp2 .mv__google-contents {
+  width: 63.8157894737%;
+  margin-left: auto;
+  margin-top: 5em;
+  background: rgba(255, 255, 255, 0.85);
+  padding-top: 6.1855670103%;
+  padding-bottom: 6.1855670103%;
+  padding-right: 9.0721649485%;
+  text-align: right;
+}
+#lp2 .mv__google-contents img {
+  width: 76.4948453608%;
+  margin-left: auto;
+}
+#lp2 .mv__ceo-image {
+  position: absolute;
+  bottom: 2.1875em;
+  left: 0;
+  width: 50.1315789474%;
+  z-index: 1;
+}
+#lp2 .mv__batches {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.25em;
+  padding-top: 10.5263157895%;
+  padding-top: 3.9473684211%;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+#lp2 .mv__batch {
+  width: 27.6315789474%;
+}
+
 .menu {
   background: rgba(255, 240, 125, 0.2);
   padding: 120px 0 60px;

@@ -1,0 +1,86 @@
+@use "../global" as *;
+
+.lp-width-container {
+  max-width: 800px;
+  margin-right:auto;
+  margin-left:auto;
+  padding: 0 20px;
+}
+
+/* ===
+MV 
+=== */
+#lp2 {
+  .mv {
+    background-image: url(https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/google-cta-image-01.webp);
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .mv__top-area {
+    position: relative;
+    padding-top: calc(81 / $maxwidth * 100%); 
+    padding-bottom: calc(78 / $maxwidth * 100%); 
+    z-index: 1;
+    overflow: hidden;
+  }
+  .mv__top-area::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(1044 / $maxwidth * 100%);
+    z-index: -1;
+    height: 100%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15) ;
+  }
+
+  .mv__area-content {
+    width: calc(584 / $maxwidth * 100%);
+    margin-right:auto;
+    margin-left:auto;
+  }
+  .mv__main-copy {
+    width: calc(670 / $maxwidth * 100%);
+    margin-right:auto;
+    margin-left:auto;
+    margin-top: calc(20 / 16 * 1em);
+  }
+  .mv__google-contents {
+    width: calc(485 / $maxwidth * 100%);
+    margin-left: auto;
+    margin-top: calc(80 / 16 * 1em);
+    background: rgba(255, 255, 255, 0.85);
+    padding-top: calc(30 / 485 * 100%);
+    padding-bottom: calc(30 / 485 * 100%);
+    padding-right: calc(44 / 485 * 100%);
+    text-align: right;
+  }
+  .mv__google-contents img {
+    width: calc(371 / 485 * 100%);
+    margin-left: auto;
+  }
+  .mv__ceo-image {
+    position: absolute;
+    bottom: calc(35 / 16 * 1em);
+    left: 0;
+    width: calc(381 / $maxwidth * 100%);
+    z-index: 1;
+  }
+  .mv__batches {
+    display: flex;
+    justify-content: center;
+    gap: calc(20 / 16 * 1em);
+    padding-top: calc(80 / $maxwidth * 100%);
+    padding-top: calc(30 / $maxwidth * 100%);
+    width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+  .mv__batch {
+    width: calc(210 / $maxwidth * 100%);
+  }
+}
