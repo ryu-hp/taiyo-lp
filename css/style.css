@@ -2,6 +2,12 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  letter-spacing: 0.05em;
+}
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 2vw;
+  }
 }
 
 body {
@@ -94,6 +100,25 @@ main {
 
 .weight-bold {
   font-weight: 700;
+}
+
+.color-yellow {
+  color: #FFF07D;
+}
+
+.btn-text {
+  color: #FFF;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.btn-tel .btn-icon {
+  width: 1.5625rem;
+}
+
+.btn-line .btn-icon {
+  width: 1.9375rem;
 }
 
 *,
@@ -240,6 +265,14 @@ div#main {
 /* ===
 MV 
 === */
+#lp2 {
+  font-size: 16px;
+}
+@media screen and (max-width: 800px) {
+  #lp2 {
+    font-size: 2vw;
+  }
+}
 #lp2 .mv {
   background-image: url(https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/mv-bg-image.webp);
   background-size: contain;
@@ -313,13 +346,141 @@ MV
           justify-content: center;
   gap: 1.25em;
   padding-top: 10.5263157895%;
-  padding-top: 3.9473684211%;
+  padding-bottom: 3.9473684211%;
   width: 100%;
   position: relative;
   z-index: 2;
 }
 #lp2 .mv__batch {
   width: 27.6315789474%;
+}
+#lp2 .mini-cta {
+  background-color: #008F54;
+  padding-top: 2.6315789474%;
+  padding-bottom: 2.6315789474%;
+}
+#lp2 .mini-cta__micro-copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.25em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1.25rem;
+}
+#lp2 .mini-cta__micro-copy-accent {
+  width: 2.8947368421%;
+}
+#lp2 .mini-cta__micro-copy-text {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+#lp2 .mini-cta__btn-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.25rem;
+}
+#lp2 .mini-cta__btn {
+  width: 20.375rem;
+}
+#lp2 .mini-cta__btn .btn {
+  width: 100%;
+  display: block;
+  border-radius: 4.375rem;
+  border: 2px solid #ffffff;
+  font-weight: 700;
+  color: #ffffff;
+  border-radius: 70px;
+  border: 2px solid #FFF;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2.3125rem;
+  padding-bottom: 1.5rem;
+}
+#lp2 .mini-cta__btn .btn-line {
+  background: -webkit-gradient(linear, left top, left bottom, from(#A3D402), color-stop(74.52%, #1EBA04));
+  background: linear-gradient(180deg, #A3D402 0%, #1EBA04 74.52%);
+}
+#lp2 .mini-cta__btn .btn-tel {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(6.25%, #FAC921), color-stop(76.92%, #F94204));
+  background: linear-gradient(180deg, #FAC921 6.25%, #F94204 76.92%);
+}
+#lp2 .mini-cta__btn .btn-hukidasi {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 71.7808219178%;
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+  background-color: #ffffff;
+  border-radius: 40px;
+  border-width: 2px;
+  border-style: solid;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translate(-50%, -40%);
+          transform: translate(-50%, -40%);
+  font-size: 1.625rem;
+}
+#lp2 .mini-cta__btn .btn-hukidasi::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 20px;
+  height: 17px;
+  z-index: 1;
+}
+#lp2 .mini-cta__btn .btn-hukidasi::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 20px;
+  height: 17px;
+  background-color: #ffffff;
+  z-index: 2;
+}
+#lp2 .mini-cta__btn .btn-tel .btn-hukidasi::after {
+  background-color: #F94204;
+}
+#lp2 .mini-cta__btn .btn-line .btn-hukidasi::after {
+  background-color: #008F54;
+}
+#lp2 .mini-cta__btn .btn-tel .btn-hukidasi {
+  border-color: #F94204;
+  color: #F94204;
+}
+#lp2 .mini-cta__btn .btn-line .btn-hukidasi {
+  border-color: #008F54;
+  color: #008F54;
 }
 
 .menu {

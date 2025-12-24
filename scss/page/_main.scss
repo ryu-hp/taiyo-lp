@@ -11,6 +11,10 @@
 MV 
 === */
 #lp2 {
+  font-size: 16px;
+  @media screen and (max-width:800px) {
+    font-size: calc(16 / 800 * 100vw);
+  }
   .mv {
     background-image: url(https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/mv-bg-image.webp);
     background-size: contain;
@@ -79,7 +83,7 @@ MV
     justify-content: center;
     gap: calc(20 / 16 * 1em);
     padding-top: calc(80 / $maxwidth * 100%);
-    padding-top: calc(30 / $maxwidth * 100%);
+    padding-bottom: calc(30 / $maxwidth * 100%);
     width: 100%;
     position: relative;
     z-index: 2;
@@ -87,4 +91,108 @@ MV
   .mv__batch {
     width: calc(210 / $maxwidth * 100%);
   }
+  
+  .mini-cta {
+    background-color: $color-theme;
+    padding-top: calc(20 / $maxwidth * 100%);
+    padding-bottom: calc(20 / $maxwidth * 100%);
+  }
+  .mini-cta__micro-copy {
+    display: flex;
+    justify-content: center;
+    gap: calc(20 / 16 * 1em);
+    align-items: center;
+    padding-bottom: rem(20);
+  }
+  .mini-cta__micro-copy-accent {
+    width: calc(22 / $maxwidth * 100%);
+  }
+  .mini-cta__micro-copy-text {
+    font-size: rem(30);
+    font-weight: $bold;
+  }
+  .mini-cta__btn-contents {
+    display: flex;
+    justify-content: center;
+    gap: rem(20);
+  }
+  .mini-cta__btn {
+    width: rem(326);
+  }
+  .mini-cta__btn .btn {
+    width: 100%;
+    display: block;
+    border-radius: rem(70);
+    border: 2px solid $color-white;
+    font-weight: $bold;
+    color: $color-white;
+    border-radius: 70px;
+    border: 2px solid #FFF;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: rem(37);
+    padding-bottom: rem(24);
+  }
+  .mini-cta__btn .btn-line {
+    background: linear-gradient(180deg, #A3D402 0%, #1EBA04 74.52%);
+  }
+  .mini-cta__btn .btn-tel {
+    background: linear-gradient(180deg, #FAC921 6.25%, #F94204 76.92%);
+  }
+  .mini-cta__btn .btn-hukidasi {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(262 / 365 * 100%);
+    padding-top: rem(2);
+    padding-bottom: rem(2);
+    background-color: $color-white;
+    border-radius: 40px;
+    border-width: 2px;
+    border-style: solid;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -40%);
+    font-size: rem(26);
+  }
+  .mini-cta__btn .btn-hukidasi::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 17px;
+    z-index: 1;
+  } 
+  .mini-cta__btn .btn-hukidasi::before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 17px;
+    background-color: $color-white;
+    z-index: 2;
+  } 
+
+  .mini-cta__btn .btn-tel .btn-hukidasi::after {
+    background-color: $color-orange;
+  }
+  .mini-cta__btn .btn-line .btn-hukidasi::after {
+    background-color: $color-theme;
+  }
+  .mini-cta__btn .btn-tel .btn-hukidasi {
+    border-color: $color-orange;
+    color: $color-orange;
+  }
+  .mini-cta__btn .btn-line .btn-hukidasi {
+    border-color: $color-theme;
+    color: $color-theme;
+  }
+
 }

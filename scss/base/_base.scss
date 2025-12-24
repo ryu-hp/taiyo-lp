@@ -3,7 +3,10 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
-  
+  letter-spacing: 0.05em;
+  @media screen and (max-width:800px) {
+    font-size: calc(16 / 800 * 100vw);
+  }
 }
 
 body {
@@ -90,4 +93,21 @@ main {
 }
 .weight-bold {
   font-weight: $bold;
+}
+.color-yellow {
+  color: $color-yellow;
+}
+
+// ボタン共通スタイル
+.btn-text {
+  color: #FFF;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.20);
+  font-size: rem(30);
+  font-weight: $bold;
+}
+.btn-tel .btn-icon {
+  width: rem(25);
+}
+.btn-line .btn-icon {
+  width: rem(31);
 }
