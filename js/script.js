@@ -28,22 +28,65 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  // フェードインアニメーション
-  const fadeElements = document.querySelectorAll('.fade-in');
+  // タブ切り替え機能
+  const signTabs = document.querySelectorAll('.sign__tab');
+  const signTabContents = document.querySelectorAll('.sign__tab-content');
   
-  if (fadeElements.length > 0) {
-    const fadeInObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-        }
+  if (signTabs.length > 0 && signTabContents.length > 0) {
+    signTabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => {
+        // すべてのタブからactiveクラスを削除
+        signTabs.forEach(t => t.classList.remove('active'));
+        // すべてのタブコンテンツからactiveクラスを削除
+        signTabContents.forEach(content => content.classList.remove('active'));
+        
+        // クリックされたタブにactiveクラスを追加
+        tab.classList.add('active');
+        // 対応するタブコンテンツにactiveクラスを追加
+        signTabContents[index].classList.add('active');
       });
-    }, {
-      threshold: 0.1
-    });
-
-    fadeElements.forEach(element => {
-      fadeInObserver.observe(element);
     });
   }
+
+  // Swiper初期化（腰）
+  const koshiSwiper = new Swiper('.solve-koshi-swiper', {
+    slidesPerView: 'auto',
+    loop: true,
+    pagination: {
+      el: '#solve-koshi-swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '#solve-koshi-swiper-next',
+    },
+  });
+
+  // Swiper初期化（肩）
+  const kataSwiper = new Swiper('.solve-kata-swiper', {
+    slidesPerView: 'auto',
+    loop: true,
+    pagination: {
+      el: '#solve-kata-swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '#solve-kata-swiper-next',
+    },
+  });
+
+  // Swiper初期化（首）
+  const kubiSwiper = new Swiper('.solve-kubi-swiper', {
+    slidesPerView: 'auto',
+    loop: true,
+    pagination: {
+      el: '#solve-kubi-swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '#solve-kubi-swiper-next',
+    },
+  });
 });

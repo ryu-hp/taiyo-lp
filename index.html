@@ -6,6 +6,13 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <title>太陽 | LP</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -56,17 +63,17 @@
           </div>
           <div class="mini-cta__btn-contents">
             <div class="mini-cta__btn">
-              <a href="#tel" class="btn btn-tel">
-                <div class="btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/tel-icon.webp" alt="電話"></div>
-                <span class="btn-text">電話で今すぐ予約</span>
-                <p class="btn-hukidasi">9時〜20時対応</p>
+              <a href="#tel" class="lp2-btn lp2-btn-tel">
+                <div class="lp2-btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/tel-icon.webp" alt="電話"></div>
+                <span class="lp2-btn-text">電話で今すぐ予約</span>
+                <p class="lp2-btn-hukidasi">9時〜20時対応</p>
               </a>
             </div>
             <div class="mini-cta__btn">
-              <a href="#line" class="btn btn-line">
-                <div class="btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/line-icon.webp" alt="チェック"></div>
-                <span class="btn-text">lineで簡単予約</span>
-                <p class="btn-hukidasi">24時間受付中</p>
+              <a href="#line" class="lp2-btn lp2-btn-line">
+                <div class="lp2-btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/line-icon.webp" alt="チェック"></div>
+                <span class="lp2-btn-text">lineで簡単予約</span>
+                <p class="lp2-btn-hukidasi">24時間受付中</p>
               </a>
             </div>
           </div>
@@ -81,19 +88,19 @@
             <div class="mini-store__images">
               <div class="mini-store__batch">
                 <p class="mini-store__batch-text">
-                  駐車場<span class="color-yellow"><span class="large">5</span>台</span>完備
+                  <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/shop-batch-text.webp" alt="駐車場５台完備">
                 </p>
               </div>
               <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/shop-image.webp" alt="店頭の画像">
             </div>
             <div class="mini-store__description">
               <p class="mini-store__adress">埼玉県熊谷市肥塚3丁目6-30</p>
-              <p class="mini-store__access">熊谷スポーツ文化公園から<span class="yellow-line">車で<span class="large">5</span>分</span></p>
+              <p class="mini-store__access"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/mini-shop-description.webp" alt="熊谷スポーツ文化公園から車で５分"></p>
             </div>
             <div class="mini-store__btn">
-              <a href="#map" class="btn btn-map">
-                <div class="btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/map-icon.webp" alt="マップアイコン"></div>
-                <span class="btn-text">Googleマップで開く</span>
+              <a href="#map" class="lp2-btn lp2-btn-map">
+                <div class="lp2-btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/map-icon.webp" alt="マップアイコン"></div>
+                <span class="lp2-btn-text">Googleマップで開く</span>
               </a>
             </div>
           </div>
@@ -101,24 +108,26 @@
   
         <!-- 相談CTA Section -->
         <section id="main-cta" class="main-cta">
-          <div class="main-cta__container container">
-            <div class="main-cta__main-copy">
-              <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/cta-copy-01.webp" alt="保険診療と自費診療どちらも対応！">
-            </div>
-            <div class="main-cta__micro-copy">
-              <div class="main-cta__micro-copy-accent main-cta__micro-copy-accent--left">
-                <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/cta-copy-accent-left.webp" alt="アクセント">
+          <div class="main-cta__container">
+            <div class="main-cta__contents">
+              <div class="main-cta__main-copy">
+                <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/cta-copy-01.webp" alt="保険診療と自費診療どちらも対応！">
               </div>
-              <p class="main-cta__micro-copy-text">お気軽にご相談ください！</p>
-              <div class="main-cta__micro-copy-accent main-cta__micro-copy-accent--right">
-                <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/cta-copy-accent-right.webp" alt="アクセント">
+              <div class="main-cta__micro-copy">
+                <div class="main-cta__micro-copy-accent main-cta__micro-copy-accent--left">
+                  <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/cta-copy-accent-left.webp" alt="アクセント">
+                </div>
+                <p class="main-cta__micro-copy-text">お気軽にご相談ください！</p>
+                <div class="main-cta__micro-copy-accent main-cta__micro-copy-accent--right">
+                  <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/cta-copy-accent-right.webp" alt="アクセント">
+                </div>
               </div>
-            </div>
-            <div class="main-cta__btn">
-              <a href="#line" class="btn btn-line">
-                <div class="btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/chat-icon.webp" alt="ラインアイコン"></div>
-                <span class="btn-text">ご相談はこちら</span>
-              </a>
+              <div class="main-cta__btn">
+                <a href="#line" class="lp2-btn lp2-btn-line">
+                  <div class="lp2-btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/chat-icon.webp" alt="ラインアイコン"></div>
+                  <span class="lp2-btn-text">ご相談はこちら</span>
+                </a>
+              </div>
             </div>
             <div class="main-cta__images">
               <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/member-image.webp" alt="スタッフ写真">
@@ -131,7 +140,17 @@
           <div class="sign__container container">
             <div class="section-title">
               <h2 class="section-title--main">こんな状態は<br>ご相談のサイン</h2>
-              <p class="section-title--dots"><span class="section-title--dot"></span><span class="section-title--dot"></span><span class="section-title--dot"></span></p>
+              <div class="section-title--dots">
+                <svg xmlns="http://www.w3.org/2000/svg" width="68" height="12" viewBox="0 0 68 12" fill="none">
+                  <path d="M6 0C9.31371 0 12 2.68629 12 6C12 9.31371 9.31371 12 6 12C2.68629 12 0 9.31371 0 6C0 2.68629 2.68629 0 6 0ZM34 0C37.3137 0 40 2.68629 40 6C40 9.31371 37.3137 12 34 12C30.6863 12 28 9.31371 28 6C28 2.68629 30.6863 0 34 0ZM62 0C65.3137 0 68 2.68629 68 6C68 9.31371 65.3137 12 62 12C58.6863 12 56 9.31371 56 6C56 2.68629 58.6863 0 62 0Z" fill="url(#paint0_linear_281_107500)"/>
+                  <defs>
+                    <linearGradient id="paint0_linear_281_107500" x1="68" y1="5.99999" x2="8.28796e-07" y2="6" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#A3D402"/>
+                      <stop offset="1" stop-color="#1EBA04"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
             </div>
             <div class="sign__body">
               <div class="sign__tabs">
@@ -275,10 +294,10 @@
               </div>
               <div class="sign__bottom-description">
                 <p class="sign__bottom-sub-text">いかがでしたか？</p>
-                <p class="sign__bottom-main-text">
-                  <span class="sign__bottom-main-text-item">どれか<span class="color-yellow"><span class="large">1</span>つ</span>でも<span class="color-yellow">当てはまったら</span></span>
-                  <span class="sign__bottom-main-text-item">たいよう整骨院の<span class="color-yellow">サイン</span>かも...<span class="color-yellow">当てはまったら</span></span>
-                </p>
+                <div class="sign__bottom-main-text">
+                  <p class="sign__bottom-main-text-item">どれか<span class="sign__bottom-main-text-item--1"><svg width="17" height="49" viewBox="0 0 17 49" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.73 -0.000199318V48.2998H6.93V10.2198L0 14.7698V5.3198L7.91 -0.000199318H16.73Z" fill="#FFF07D"/></svg></span><span class="color-yellow">つ</span>でも<span class="color-yellow">当てはまったら</span></p>
+                  <p class="sign__bottom-main-text-item">たいよう整骨院の<span class="color-yellow">サイン</span>かも...</p>
+                </div>
               </div>
             </div>
           </div>
@@ -326,7 +345,6 @@
                     </div>
                   </div>
                    <div id="solve-koshi-swiper-pagination" class="swiper-pagination"></div>
-                  <div id="solve-koshi-swiper-prev" class="swiper-button-prev"></div>
                   <div id="solve-koshi-swiper-next" class="swiper-button-next"></div>
                 </div>
               </div>
@@ -368,7 +386,6 @@
                     </div>
                   </div>
                    <div id="solve-kata-swiper-pagination" class="swiper-pagination"></div>
-                  <div id="solve-kata-swiper-prev" class="swiper-button-prev"></div>
                   <div id="solve-kata-swiper-next" class="swiper-button-next"></div>
                 </div>
               </div>
@@ -410,7 +427,6 @@
                     </div>
                   </div>
                    <div id="solve-kubi-swiper-pagination" class="swiper-pagination"></div>
-                  <div id="solve-kubi-swiper-prev" class="swiper-button-prev"></div>
                   <div id="solve-kubi-swiper-next" class="swiper-button-next"></div>
                 </div>
               </div>
@@ -428,15 +444,7 @@
               <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/google-cta-main-copy.webp" alt="腰・肩・首の不調を正t上に戻すことに特化した特別な治療を行っています">
             </div>
             <div class="feature__micro-copy">
-              <span class="feature__micro-copy-accent feature__micro-copy-accent--left">
-                <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/cta-copy-accent-left.webp" alt="アクセント">
-              </span>
-              <p class="feature__micro-copy-text">
-                Google口コミ
-              </p>
-              <span class="feature__micro-copy-accent feature__micro-copy-accent--right">
-                <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/cta-copy-accent-right.webp" alt="アクセント">
-              </span>
+              <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/google-kutikomi-micro-copy.png" alt="Google口コミ">
             </div>
             <div class="feature__cotnents">
               <div class="feature__item">
@@ -461,61 +469,52 @@
             <div class="point__cotnents">
               <div class="point__item">
                 <div class="point__batch">
-                  <p class="point__batch-text">
-                    <span>point</span>
-                    <span class="large">01</span>
+                  <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/point-batch-01.png" alt="point 01">
+                </div>
+                <div class="point__image">
+                  <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/point-image-01.webp" alt="お客様の状態に合わせて保険と自費の使い分け可能！">
+                </div>
+                <div class="point__body">
+                  <p class="point__head">
+                    お客様の状態に合わせて<br>保険と自費の使い分け可能！
                   </p>
-                  <div class="point__image">
-                    <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/point-image-01.webp" alt="お客様の状態に合わせて保険と自費の使い分け可能！">
-                  </div>
-                  <div class="point__body">
-                    <p class="point__head">
-                      お客様の状態に合わせて<br>保険と自費の使い分け可能！
-                    </p>
-                    <p class="point__description">
-                      痛む箇所やレントゲン画像が原因の全てではないことがほとんどだから、<span class="point__description--yellow-line">症状の根本を突き止めて、施術を行います。</span><br>
-                      だからこそ、解決できる施術員を探すのを最後にできます。
-                    </p>
-                  </div>
+                  <p class="point__description">
+                    痛む箇所やレントゲン画像が原因の全てではないことがほとんどだから、<span class="point__description--yellow-line">症状の根本を突き止めて、施術を行います。</span><br>
+                    だからこそ、解決できる施術員を探すのを最後にできます。
+                  </p>
                 </div>
               </div>
               <div class="point__item">
                 <div class="point__batch">
-                  <p class="point__batch-text">
-                    <span>point</span>
-                    <span class="large">02</span>
+                  <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/point-batch-02.png" alt="point 02">
+                </div>
+                <div class="point__image">
+                  <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/point-image-02.webp" alt="10回での回復を目指した明確な施術プランニング！">
+                </div>
+                <div class="point__body">
+                  <p class="point__head">
+                    10回での回復を目指した<br>明確な施術プランニング！
                   </p>
-                  <div class="point__image">
-                    <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/point-image-02.webp" alt="10回での回復を目指した明確な施術プランニング！">
-                  </div>
-                  <div class="point__body">
-                    <p class="point__head">
-                      10回での回復を目指した<br>明確な施術プランニング！
-                    </p>
-                    <p class="point__description">
-                      身体全体を検査・評価します。多くの知見に基づき総合的に分析します。<br>
-                      症状の原因を仮説だ立てた上で、患者さんに<span class="point__description--yellow-line">「痛みの原因は何か」「治すべき所はどこか」を説明し、</span>「施術プランの提案」をします。
-                    </p>
-                  </div>
+                  <p class="point__description">
+                    身体全体を検査・評価します。多くの知見に基づき総合的に分析します。<br>
+                    症状の原因を仮説だ立てた上で、患者さんに<span class="point__description--yellow-line">「痛みの原因は何か」「治すべき所はどこか」を説明し、</span>「施術プランの提案」をします。
+                  </p>
                 </div>
               </div>
               <div class="point__item">
                 <div class="point__batch">
-                  <p class="point__batch-text">
-                    <span>point</span>
-                    <span class="large">03</span>
+                  <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/point-batch-03.png" alt="point 03">
+                </div>
+                <div class="point__image">
+                  <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/point-image-03.webp" alt="きれいな室内・元気なスタッフが運営！">
+                </div>
+                <div class="point__body">
+                  <p class="point__head">
+                    きれいな室内・<br>元気なスタッフが運営！
                   </p>
-                  <div class="point__image">
-                    <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/point-image-03.webp" alt="きれいな室内・元気なスタッフが運営！">
-                  </div>
-                  <div class="point__body">
-                    <p class="point__head">
-                      きれいな室内・<br>元気なスタッフが運営！
-                    </p>
-                    <p class="point__description">
-                      たいよう接骨院グループは、清潔・快適な空間で施術を受けて頂けることはもちろん、<span class="point__description--yellow-line">明るく元気な雰囲気作りを心がけております。</span>
-                    </p>
-                  </div>
+                  <p class="point__description">
+                    たいよう接骨院グループは、清潔・快適な空間で施術を受けて頂けることはもちろん、<span class="point__description--yellow-line">明るく元気な雰囲気作りを心がけております。</span>
+                  </p>
                 </div>
               </div>
             </div>
@@ -525,24 +524,26 @@
         <!-- Main-cta-02 Section -->
         <section id="cta-02" class="cta-02">
           <div class="cta-02__container container">
-            <div class="cta-02__head">
-              <p class="cta-02__head-main">体の<span class="color-green"><span class="dot">違</span><span class="dot">和</span><span class="dot">感</span></span>を感じるあなた</p>
-              <p class="cta-02__head-sub">放置しているとさらなる悪化にも...</p>
-            </div>
-            <div class="cta-02__contents">
-              <p class="cta-02__tag">まずは</p>
-              <div class="cta-02__select">
-                <div class="cta-02__select-item"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/hokensinryo-label.webp" alt="保険診療"></div>
-                <span class="cta-02__select-text">or</span>
-                <div class="cta-02__select-item"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/jihisinryo-label.webp" alt="自費診療"></div>
+            <div class="cta-02__content">
+              <div class="cta-02__head">
+                <p class="cta-02__head-main">体の<span class="color-green large"><span class="dot">違</span><span class="dot">和</span><span class="dot">感</span></span>を感じるあなた</p>
+                <p class="cta-02__head-sub">放置しているとさらなる悪化にも...</p>
               </div>
-              <p class="cta-02__description">
-                どちらの対応化<br>
-                確認してみてください
-              </p>
+              <div class="cta-02__contents">
+                <p class="cta-02__tag">まずは</p>
+                <div class="cta-02__select">
+                  <div class="cta-02__select-item"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/hokensinryo-label.webp" alt="保険診療"></div>
+                  <span class="cta-02__select-text">or</span>
+                  <div class="cta-02__select-item"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/jihisinryo-label.webp" alt="自費診療"></div>
+                </div>
+                <p class="cta-02__description">
+                  どちらの対応化<br>
+                  確認してみてください
+                </p>
+              </div>
             </div>
             <div class="cta-02__image">
-              <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/member-image.webp" alt="集合写真">
+              <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/innai-02.webp" alt="集合写真">
             </div>
           </div>
         </section>
@@ -554,23 +555,23 @@
                 <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/text-accent-left.webp" alt="アクセント">
               </span>
               <p class="mini-cta-02__micro-copy-text"><span class="color-yellow">当日予約</span>も可能</p>
-              <span class="mini-cta-02__micro-copy-accent span mini-cta-02__micro-copy-accent--left">
-                <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/text-accent-left.webp" alt="アクセント">
+              <span class="mini-cta-02__micro-copy-accent span mini-cta-02__micro-copy-accent--right">
+                <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/text-accent-rjght.webp" alt="アクセント">
               </span>
             </div>
             <div class="mini-cta-02__btn-contents">
               <div class="mini-cta-02__btn">
-                <a href="#" class="mini-cta-02__btn btn btn-tel">
-                  <div class="btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/tel-icon.webp" alt="電話"></div>
-                  <span class="btn-text">電話で今すぐ予約</span>
-                  <p class="btn-hukidasi">9時〜20時対応</p>
+                <a href="#" class="lp2-btn lp2-btn-tel">
+                  <div class="lp2-btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/tel-icon.webp" alt="電話"></div>
+                  <span class="lp2-btn-text">電話で今すぐ予約</span>
+                  <p class="lp2-btn-hukidasi">9時〜20時対応</p>
                 </a>
               </div>
               <div class="mini-cta-02__btn">
-                <a href="#" class="mini-cta-02__btn btn btn-line">
-                  <div class="btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/line-icon.webp" alt="チェック"></div>
-                  <span class="btn-text">lineで簡単予約</span>
-                  <p class="btn-hukidasi">24時間受付中</p>
+                <a href="#" class="lp2-btn lp2-btn-line">
+                  <div class="lp2-btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/line-icon.webp" alt="チェック"></div>
+                  <span class="lp2-btn-text">lineで簡単予約</span>
+                  <p class="lp2-btn-hukidasi">24時間受付中</p>
                 </a>
               </div>
             </div>
@@ -579,70 +580,102 @@
   
         <!-- Menu Section -->
         <section id="menu" class="menu">
-          <div class="menu__inner">
-              <h2 class="menu__title">施術メニュー</h2>
-              <div class="menu__icon"></div>
-              
+          <div class="menu__container container">
+            <div class="menu__bg-top-image">
+              <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/menu-bg-tree-image.webp " alt="装飾">
+            </div>
+            <div class="section-title">
+              <h2 class="section-title--main">こんな状態は<br>ご相談のサイン</h2>
+              <div class="section-title--dots">
+                <svg xmlns="http://www.w3.org/2000/svg" width="68" height="12" viewBox="0 0 68 12" fill="none">
+                  <path d="M6 0C9.31371 0 12 2.68629 12 6C12 9.31371 9.31371 12 6 12C2.68629 12 0 9.31371 0 6C0 2.68629 2.68629 0 6 0ZM34 0C37.3137 0 40 2.68629 40 6C40 9.31371 37.3137 12 34 12C30.6863 12 28 9.31371 28 6C28 2.68629 30.6863 0 34 0ZM62 0C65.3137 0 68 2.68629 68 6C68 9.31371 65.3137 12 62 12C58.6863 12 56 9.31371 56 6C56 2.68629 58.6863 0 62 0Z" fill="url(#paint0_linear_281_107500)"/>
+                  <defs>
+                    <linearGradient id="paint0_linear_281_107500" x1="68" y1="5.99999" x2="8.28796e-07" y2="6" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#A3D402"/>
+                      <stop offset="1" stop-color="#1EBA04"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <div class="menu__body">
               <div class="menu__list">
                   <!-- メニューカード1: 本格整体 -->
                   <div class="menu__card menu__card--popular">
+                    <div class="menu__card-hukidashi">
+                      <p class="menu__card-hukidashi-text">
+                        1番人気！迷ったらこの施術！
+                      </p>
                       <div class="menu__card-popular-badge">
-                          <div class="menu__badge-icon">1</div>
-                          <p class="menu__badge-text">1番人気！迷ったらこの施術！</p>
+                        <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/menu-batch.webp" alt="1番人気">
                       </div>
-                      <div class="menu__card-content">
-                          <div class="menu__card-arrow"></div>
-                          <h3 class="menu__card-title">改善したい方  本格整体</h3>
-                          <div class="menu__card-image">
-                              <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/menu-image-01.webp" alt="本格整体の施術イメージ">
-                          </div>
-                          <p class="menu__card-text">「脊骨や骨盤を含む全身の骨格」を調整することで、根本からの改善を目指す施術です。</p>
+                    </div>
+                    <div class="menu__card-content">
+                      <h3 class="menu__card-title">改善したい方  本格整体</h3>
+                      <div class="menu__card-image">
+                        <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/menu-image-01.webp" alt="本格整体の施術イメージ">
                       </div>
-                      <div class="menu__card-crown"></div>
+                      <p class="menu__card-text">
+                        「脊骨や骨盤を含む全身の骨格」を調整することで、根本からの改善を目指す施術です。
+                      </p>
+                    </div>
                   </div>
-
+  
                   <!-- メニューカード2: 神経痛・しびれ特別整体 -->
                   <div class="menu__card">
-                      <div class="menu__card-badge">
-                          <p class="menu__badge-text">しびれを感じる、と思ったらこれ！</p>
+                    <div class="menu__card-hukidashi">
+                      <p class="menu__card-hukidashi-text">
+                        しびれを感じる、と思ったらこれ！
+                      </p>
+                    </div>
+                    <div class="menu__card-content">
+                      <h3 class="menu__card-title">神経痛・しびれ特別整体</h3>
+                      <div class="menu__card-image">
+                        <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/menu-image-02.webp" alt="神経痛・しびれ特別整体の施術イメージ">
                       </div>
-                      <div class="menu__card-content">
-                          <div class="menu__card-arrow"></div>
-                          <h3 class="menu__card-title">神経痛・しびれ特別整体</h3>
-                          <div class="menu__card-image">
-                              <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/menu-image-02.webp" alt="神経痛・しびれ特別整体の施術イメージ">
-                          </div>
-                          <p class="menu__card-text">神経痛・しびれの症状改善を目的とした、熊谷たいよう接骨院の特別施術です。</p>
-                      </div>
+                      <p class="menu__card-text">
+                        神経痛・しびれの症状改善を目的とした、熊谷たいよう接骨院の特別施術です。
+                      </p>
+                    </div>
                   </div>
-
+  
                   <!-- メニューカード3: 産後の骨盤矯正 -->
                   <div class="menu__card">
-                      <div class="menu__card-badge">
-                          <p class="menu__badge-text">産後ケアならこれ！</p>
+                    <div class="menu__card-hukidashi">
+                      <p class="menu__card-hukidashi-text">
+                        産後ケアならこれ！
+                      </p>
+                    </div>
+                    <div class="menu__card-content">
+                      <h3 class="menu__card-title">産後の骨盤矯正</h3>
+                      <div class="menu__card-image">
+                        <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/menu-image-03.webp" alt="産後の骨盤矯正の施術イメージ">
                       </div>
-                      <div class="menu__card-content">
-                          <div class="menu__card-arrow"></div>
-                          <h3 class="menu__card-title">産後の骨盤矯正</h3>
-                          <div class="menu__card-image">
-                              <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/menu-image-03.webp" alt="産後の骨盤矯正の施術イメージ">
-                          </div>
-                          <p class="menu__card-text">辛い症状で育児に集中出来ない産後ママさん向けの骨盤矯正・背骨矯正です。</p>
-                      </div>
+                      <p class="menu__card-text">
+                        辛い症状で育児に集中出来ない産後ママさん向けの骨盤矯正・背骨矯正です。
+                      </p>
+                    </div>
                   </div>
               </div>
+            </div>
 
               <!-- LINE CTA -->
               <div class="menu__cta">
-                  <div class="menu__cta-title">
-                      <span class="menu__cta-arrow menu__cta-arrow--left"></span>
-                      <p class="menu__cta-title-text">友だち追加でメニュー確認！</p>
-                      <span class="menu__cta-arrow menu__cta-arrow--right"></span>
-                  </div>
-                  <a href="#" class="menu__cta-button">
-                      <span class="menu__cta-icon"></span>
-                      <span class="menu__cta-text">LINEで確認</span>
+                <div class="menu__cta-micro-copy">
+                  <span class="menu__cta-micro-copy-accent span menu__cta-micro-copy-accent--left">
+                    <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/cta-copy-accent-left.webp" alt="アクセント">
+                  </span>
+                  <p class="menu__cta-micro-copy-text">友だち追加でメニュー確認！</p>
+                  <span class="menu__cta-micro-copy-accent span menu__cta-micro-copy-accent--right">
+                    <img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/cta-copy-accent-right.webp" alt="アクセント">
+                  </span>
+                </div>
+                <div class="menu__cta-btn">  
+                  <a href="#line" class="lp2-btn lp2-btn-line">
+                    <div class="lp2-btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/line-icon-main.webp" alt="LINE"></div>
+                    <span class="lp2-btn-text">lineで確認</span>
                   </a>
+                </div>
               </div>
           </div>
         </section>
@@ -725,9 +758,9 @@
                 </div>
               </div>
               <div class="voice__btn">
-                <a href="#map" class="btn btn-map">
-                  <div class="btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/map-icon.webp" alt="マップアイコン"></div>
-                  <span class="btn-text">他の口コミをマップで見る</span>
+                <a href="#map" class="lp2-btn lp2-btn-map">
+                  <div class="lp2-btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/map-icon.webp" alt="マップアイコン"></div>
+                  <span class="lp2-btn-text">他の口コミをマップで見る</span>
                 </a>
               </div>
             </div>
@@ -770,9 +803,9 @@
               </div>
             </div>
             <div class="map-cta-02__btn">
-              <a href="#map" class="btn btn-map">
-                <div class="btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/map-icon.webp" alt="マップアイコン"></div>
-                <span class="btn-text">場所をマップで見る</span>
+              <a href="#map" class="lp2-btn lp2-btn-map">
+                <div class="lp2-btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/map-icon.webp" alt="マップアイコン"></div>
+                <span class="lp2-btn-text">場所をマップで見る</span>
               </a>
             </div>
           </div>
@@ -791,17 +824,17 @@
             </div>
             <div class="mini-cta-02__btn-contents">
               <div class="mini-cta-02__btn">
-                <a href="#" class="mini-cta-02__btn btn btn-tel">
-                  <div class="btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/tel-icon.webp" alt="電話"></div>
-                  <span class="btn-text">電話で今すぐ予約</span>
-                  <p class="btn-hukidasi">9時〜20時対応</p>
+                <a href="#" class="mini-cta-02__btn lp2-btn lp2-btn-tel">
+                  <div class="lp2-btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/tel-icon.webp" alt="電話"></div>
+                  <span class="lp2-btn-text">電話で今すぐ予約</span>
+                  <p class="lp2-btn-hukidasi">9時〜20時対応</p>
                 </a>
               </div>
               <div class="mini-cta-02__btn">
-                <a href="#" class="mini-cta-02__btn btn btn-line">
-                  <div class="btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/line-icon.webp" alt="チェック"></div>
-                  <span class="btn-text">lineで簡単予約</span>
-                  <p class="btn-hukidasi">24時間受付中</p>
+                <a href="#" class="mini-cta-02__btn lp2-btn lp2-btn-line">
+                  <div class="lp2-btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/line-icon.webp" alt="チェック"></div>
+                  <span class="lp2-btn-text">lineで簡単予約</span>
+                  <p class="lp2-btn-hukidasi">24時間受付中</p>
                 </a>
               </div>
             </div>
@@ -939,9 +972,9 @@
               </div>
             </div>
             <div class="main-store__btn">
-              <a href="#map" class="btn btn-map">
-                <div class="btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/map-icon.webp" alt="マップアイコン"></div>
-                <span class="btn-text">Googleマップで開く</span>
+              <a href="#map" class="lp2-btn lp2-btn-map">
+                <div class="lp2-btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/map-icon.webp" alt="マップアイコン"></div>
+                <span class="lp2-btn-text">Googleマップで開く</span>
               </a>
             </div>
           </div>
@@ -961,17 +994,17 @@
             </div>
             <div class="mini-cta-02__btn-contents">
               <div class="mini-cta-02__btn">
-                <a href="#" class="mini-cta-02__btn btn btn-tel">
-                  <div class="btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/tel-icon.webp" alt="電話"></div>
-                  <span class="btn-text">電話で今すぐ予約</span>
-                  <p class="btn-hukidasi">9時〜20時対応</p>
+                <a href="#" class="mini-cta-02__btn lp2-btn lp2-btn-tel">
+                  <div class="lp2-btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/tel-icon.webp" alt="電話"></div>
+                  <span class="lp2-btn-text">電話で今すぐ予約</span>
+                  <p class="lp2-btn-hukidasi">9時〜20時対応</p>
                 </a>
               </div>
               <div class="mini-cta-02__btn">
-                <a href="#" class="mini-cta-02__btn btn btn-line">
-                  <div class="btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/line-icon.webp" alt="チェック"></div>
-                  <span class="btn-text">lineで簡単予約</span>
-                  <p class="btn-hukidasi">24時間受付中</p>
+                <a href="#" class="mini-cta-02__btn lp2-btn lp2-btn-line">
+                  <div class="lp2-btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/line-icon.webp" alt="チェック"></div>
+                  <span class="lp2-btn-text">lineで簡単予約</span>
+                  <p class="lp2-btn-hukidasi">24時間受付中</p>
                 </a>
               </div>
             </div>
@@ -1182,17 +1215,17 @@
             </div>
             <div class="mini-cta-02__btn-contents">
               <div class="mini-cta-02__btn">
-                <a href="#" class="mini-cta-02__btn btn btn-tel">
-                  <div class="btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/tel-icon.webp" alt="電話"></div>
-                  <span class="btn-text">電話で今すぐ予約</span>
-                  <p class="btn-hukidasi">9時〜20時対応</p>
+                <a href="#" class="mini-cta-02__btn lp2-btn lp2-btn-tel">
+                  <div class="lp2-btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/tel-icon.webp" alt="電話"></div>
+                  <span class="lp2-btn-text">電話で今すぐ予約</span>
+                  <p class="lp2-btn-hukidasi">9時〜20時対応</p>
                 </a>
               </div>
               <div class="mini-cta-02__btn">
-                <a href="#" class="mini-cta-02__btn btn btn-line">
-                  <div class="btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/line-icon.webp" alt="チェック"></div>
-                  <span class="btn-text">lineで簡単予約</span>
-                  <p class="btn-hukidasi">24時間受付中</p>
+                <a href="#" class="mini-cta-02__btn lp2-btn lp2-btn-line">
+                  <div class="lp2-btn-icon"><img src="https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/line-icon.webp" alt="チェック"></div>
+                  <span class="lp2-btn-text">lineで簡単予約</span>
+                  <p class="lp2-btn-hukidasi">24時間受付中</p>
                 </a>
               </div>
             </div>

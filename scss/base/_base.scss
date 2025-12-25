@@ -97,17 +97,86 @@ main {
 .color-yellow {
   color: $color-yellow;
 }
+.yellow-line {
+  text-decoration: underline;
+  text-decoration-color: $color-yellow;
+  text-underline-offset: rem(-4);
+  text-decoration-thickness: rem(16);
+}
+.color-green {
+  color: $color-theme;
+}
 
 // ボタン共通スタイル
-.btn-text {
+.lp2-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right:auto;
+  margin-left:auto;
+}
+.lp2-btn-text {
   color: #FFF;
   text-shadow: 0 1px 6px rgba(0, 0, 0, 0.20);
   font-size: rem(30);
   font-weight: $bold;
 }
-.btn-tel .btn-icon {
+.lp2-btn-map .lp2-btn-text,
+.lp2-btn-line .lp2-btn-text {
+  font-size: rem(34);
+}
+.lp2-btn-tel .lp2-btn-icon {
   width: rem(25);
 }
-.btn-line .btn-icon {
+.lp2-btn-line .lp2-btn-icon {
   width: rem(31);
+}
+.lp2-btn-map .lp2-btn-icon {
+  width: rem(33);
+}
+.lp2-btn.lp2-btn-map {
+  width: rem(584);
+  border-radius: rem(100);
+  background: $color-lp2-btn-map;
+  gap: rem(30);
+  box-shadow: 0 rem(8) 0 0 #6F5508;
+  padding: rem(30) rem(20);
+}
+.lp2-btn.lp2-btn-line {
+  width: rem(584);
+  border-radius: rem(100);
+  background: $color-lp2-btn-line;
+  gap: rem(25.8);
+  padding: rem(30) rem(20);
+  box-shadow: 0 rem(8) 0 0 #008F54;
+}
+
+// セクションタイトル
+.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:rem(24);
+  margin-bottom: rem(60);
+}
+.section-title--main {
+  font-size: rem(60);
+  font-family: $second-font-family;
+  color: $color-brown;
+  line-height: calc(96 / 60);
+  text-align: center;
+  font-weight: $bold;
+}
+.section-title--dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-title--dots svg {
+  width: rem(68);
+}
+.section-title--dots *{
+  fill: linear-gradient(270deg, #A3D402 0%, #1EBA04 100%);
 }
