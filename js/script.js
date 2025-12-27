@@ -89,4 +89,29 @@ document.addEventListener('DOMContentLoaded', () => {
       nextEl: '#solve-kubi-swiper-next',
     },
   });
+
+  // FAQアコーディオン機能
+  const faqTitles = document.querySelectorAll('.is-AccordionTitle');
+  
+  if (faqTitles.length > 0) {
+    faqTitles.forEach(title => {
+      title.addEventListener('click', () => {
+        const faqItem = title.closest('.faq__item');
+        const accordionContent = title.nextElementSibling;
+        
+        // すでに開いているかチェック
+        const isOpen = faqItem.classList.contains('is-open');
+        
+        if (isOpen) {
+          // 閉じる
+          faqItem.classList.remove('is-open');
+          accordionContent.style.maxHeight = null;
+        } else {
+          // 開く
+          faqItem.classList.add('is-open');
+          accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+        }
+      });
+    });
+  }
 });

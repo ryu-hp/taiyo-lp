@@ -4,7 +4,7 @@
   max-width: 800px;
   margin-right:auto;
   margin-left:auto;
-  padding: 0 20px;
+  // padding: 0 20px;
 }
 
 /* ===
@@ -105,7 +105,7 @@ MV
     justify-content: center;
     gap: calc(20 / 16 * 1em);
     align-items: center;
-    padding-bottom: rem(20);
+    padding-bottom: rem(40);
     color: $color-white;
   }
   .mini-cta__micro-copy-accent {
@@ -135,13 +135,13 @@ MV
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: rem(37);
-    padding-bottom: rem(24);
+    padding-top: rem(46);
+    padding-bottom: rem(26);
     gap: rem(10);
     text-transform: uppercase;
   }
   .mini-cta__btn .lp2-btn-text {
-    font-size: rem(30) !important;
+    font-size: rem(30) ;
   }
   .mini-cta__btn .lp2-btn-line {
     background: linear-gradient(180deg, #A3D402 0%, #1EBA04 74.52%);
@@ -399,6 +399,9 @@ MV
     display: flex;
     gap: rem(30);
   }
+  .sign__tab-content-column {
+    flex-grow:1;
+  }
   .sign__tab-content-images {
     height: rem(405);
   }
@@ -496,13 +499,13 @@ MV
     color: $color-white;
   }
   .sign__bottom-main-text-item--1 {
-    width: rem(17);
     display: inline-block;
     margin-left: rem(10);
     margin-right: rem(14);
   }
   .sign__bottom-main-text-item--1 svg {
     vertical-align: sub;
+    width: rem(17);
   }
 
   /* ===
@@ -559,7 +562,7 @@ MV
     color: #FFF;
     text-shadow: 0 1px 6px rgba(0, 0, 0, 0.20);
     margin-right: rem(24);
-    padding-bottom: rem(12);
+    padding-top: rem(12);
     padding-left: rem(6);
   }
   .solve-voice__contents-head--point::before {
@@ -820,7 +823,7 @@ MV
   }
   .point__description--yellow-line {
     text-decoration: underline;
-    text-decoration-color: $color-yellow;
+    text-decoration-color: rgba($color: $color-yellow, $alpha: 0.6);
     text-underline-offset: rem(-33);
     text-decoration-thickness: rem(43);
   }
@@ -985,14 +988,11 @@ MV
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: rem(37);
+    padding-top: rem(48);
     padding-bottom: rem(24);
     gap: rem(30);
     text-transform: uppercase;
     box-shadow: 0 rem(5) rem(10) 0 #00472A;
-  }
-  .mini-cta-02__btn .lp2-btn-text {
-    font-size: rem(30) !important;
   }
   .mini-cta-02__btn .lp2-btn-line {
     background: linear-gradient(180deg, #A3D402 0%, #1EBA04 74.52%);
@@ -1065,7 +1065,7 @@ MV
 
   .menu {
     background: rgba(255, 240, 125, 0.2);
-    padding: rem(120) 0 rem(60);
+    padding: rem(120) 0 rem(120);
     position: relative;
   }
   .menu__container {
@@ -1082,7 +1082,7 @@ MV
   .menu__list {
     display: flex;
     flex-direction: column;
-    gap: rem(60);
+    gap: rem(98);
     margin-top: rem(90);
   }
   .menu__card {
@@ -1174,6 +1174,7 @@ MV
     gap: rem(10);
     align-items: center;
     padding-bottom: rem(20);
+    margin-top: rem(60);
   }
   .menu__cta-micro-copy-accent {
     width: rem(26);
@@ -1184,6 +1185,8 @@ MV
   }
   .menu__cta-btn {
     width: rem(584);
+    margin-right:auto;
+    margin-left:auto;
   }
   .menu__cta-btn .lp2-btn {
     width: 100%;
@@ -1214,4 +1217,604 @@ MV
   }
 
 
+  /* ===
+  voice
+  === */
+  .voice {
+    background-color: rgba(160, 218, 40, 0.2);
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0;
+  }
+  .voice::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,75%);
+    width: rem(1052);
+    height: rem(365);
+    background-color: #ffffff;
+    background-image: url(https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/math-clip-bg-image.webp);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    border-radius: 50%;
+    z-index: 0;
+  }
+  .voice__container {
+    position: relative;
+    z-index: 1;
+    padding-top: rem(120);
+    padding-bottom: rem(220);
+  }
+  .voice-top-accent {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 760px;
+    z-index: 1;
+    @include mq(md) {
+      width: 100vw;
+      margin-left: calc(50% - 50vw);
+    }
+  }
+
+  .voice__title {
+    position: relative;
+    margin-bottom: rem(80);
+  }
+  .voice__title-accent {
+    left: 50%;
+    transform: translateX(-50%);
+    width: rem(700);
+    top: rem(43);
+    position: absolute;
+  }
+  .voice__description {
+    width: rem(651);
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom: rem(84);
+  }
+
+  .voice__item {
+    position: relative;
+    background-image: url(https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/math-clip-bg-image.webp);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    background-color: $color-white;
+    width: calc(100% - rem(10));
+    box-shadow: rem(10) rem(9) 0 0 #A0DA28;
+    padding: rem(50) rem(44);
+  }
+  .voice__item:not(:last-child) {
+    margin-bottom: rem(74);
+  }
+  .voice__item-quot {
+    position: absolute;
+    top: rem(-24);
+    right: rem(45);
+    width: rem(92);
+    z-index: 1;
+  }
+  .voice__item-head {
+    display: flex;
+    align-items: center;
+    gap: rem(24);
+    padding-bottom: rem(40);
+    border-bottom: 1px solid #222222;
+  }
+  .voice__item-image {
+    width: rem(117);
+    border-radius: rem(6);
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .voice__item-head-text {
+    font-size: rem(32);
+    line-height: calc(51 / 32);
+    font-weight: $bold;
+    font-family: $second-font-family;
+    color: $color-theme;
+  }
+  .voice__item-content {
+    padding-top: rem(40);
+  }
+  .voice__item-description {
+    font-size: rem(28);
+    line-height: calc(45 / 28);
+    font-weight: $medium;
+  }
+  .voice__item-description .yellow-line {
+    text-underline-offset: rem(-33);
+    text-decoration-thickness: rem(43);
+  }
+
+  .voice__btn  {
+    margin-top: rem(70);
+    width: rem(584);
+    margin-right:auto;
+    margin-left:auto;
+  }
+
+
+  .map-cta-02 {
+    background-image: url(https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/math-clip-bg-image.webp);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    padding-top: rem(60);
+    padding-bottom: rem(120);
+  }
+
+  .map-cta-02__micro-copy {
+    display: flex;
+    justify-content: center;
+    gap: rem(30);
+    align-items: center;
+    padding-bottom: rem(20);
+  }
+  .map-cta-02__micro-copy-accent {
+    width: rem(37);
+    margin-top: rem(3);
+  }
+  .map-cta-02__micro-copy-text {
+    font-size: rem(50);
+    font-weight: $bold;
+    color: $color-theme;
+    font-family: $second-font-family;
+  }
+  .map-cta-02__head-mai {
+    margin-top: rem(20);
+    width: rem(671);
+    margin-right:auto;
+    margin-left:auto;
+  }
+  .map-cta-02__dots {
+    margin-top: rem(40);
+  }
+  .map-cta-02__body {
+    margin-top: rem(60);
+  }
+  .map-cta-02__description {
+    text-align: center;
+    font-size: rem(40);
+    font-weight: normal;
+  }
+  .map-cta-02__label-contents {
+    margin-top: rem(30);
+    gap: rem(30);
+    display: flex;
+    justify-content: center;
+  }
+  .map-cta-02__label {
+    width: rem(321);
+    border-radius: rem(8);
+    box-shadow: 0 rem(3) rem(4) 0 rgba(225, 216, 200, 0.50);
+  }
+  .map-cta-02__map {
+    width: rem(671);
+    margin-right:auto;
+    margin-left:auto;
+    margin-top: rem(30);
+    border-radius: rem(16);
+    overflow: hidden;
+  }
+  .map-cta-02__map iframe {
+    aspect-ratio: 671 / 448;
+    width: 100%;
+    height: 100%;
+  }
+  .map-cta-02__btn {
+    margin-top: rem(60);
+    width: rem(584);
+    margin-right:auto;
+    margin-left:auto;
+  }
+
+
+  // =====  
+  // staffセクション
+  // =====
+  .staff {
+    background-color: rgba($color: $color-yellow, $alpha: 0.2);
+  }
+  .staff__container {
+    position: relative;
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+  }
+  .staff__images {
+    position: relative;
+  }
+  .staff__top-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: rem(322);
+  }
+  .staff__position {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: $color-theme;
+    padding: rem(20) rem(30);
+    border-top-right-radius: rem(16);
+    font-size: rem(30);
+    font-weight: $bold;
+    color: $color-white;
+    white-space: nowrap;
+  }
+  .staff__position .color-yellow {
+    display: inline-block;
+    margin-right: rem(30);
+  }
+  .staff__item {
+    border-radius: rem(16);
+    overflow: hidden;
+    background: #FFF;
+    box-shadow: 0 rem(5) rem(30) 0 rgba(83, 40, 13, 0.20);
+  }
+  .staff__item:not(:last-child) {
+    margin-bottom: rem(60);
+  }
+  .staff__item-body {
+    background-color: $color-white;
+    padding: rem(30) rem(44);
+  }
+
+
+
+  .main-store {
+    background-color: $color-white;
+    background-image: url(https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/math-clip-bg-image.webp);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    padding-top: rem(89);
+    padding-bottom: rem(120);
+  }
+  .main-store__images  {
+    position: relative;
+  }
+  .main-store__batch {
+    position: absolute;
+    right: 0;
+    top: rem(-29);
+    width: rem(183);
+    height: rem(183);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(201deg, #30BD04 8.41%, #008F54 88.34%);
+    border-radius: 50%;
+  }
+  .main-store__batch-text {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.20);
+    width: calc(124 / 183 * 100%);
+  }
+  .main-store__image {
+    border-radius: rem(16);
+    overflow: hidden;
+  }
+  .main-store__image img {
+    aspect-ratio: 672 / 503;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .main-store__description {
+    margin-top: rem(30);
+  }
+  .main-store__btn-contents {
+    display: flex;
+    justify-content: center;
+    gap: rem(20);
+  }
+  .main-store__calendar {
+    margin-top: rem(30);
+  }
+  .main-store__calendar-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    font-family: $base-font-family;
+    border-radius: rem(10);
+    overflow: hidden;
+    width: 100%;
+  }
+  .main-store__calendar-table th,
+  .main-store__calendar-table td {
+    font-weight: $bold;
+    padding: rem(24) rem(24); 
+    font-size: rem(28);
+  }
+  .main-store__calendar-table th {
+    border-top: 2px solid $color-theme;
+    border-left: 1px solid $color-theme;
+    border-right: 1px solid $color-theme;
+  }
+  .main-store__calendar-table tbody tr:last-child td {
+    border-bottom: 2px solid $color-theme;
+  }
+  .main-store__calendar-table td:first-child {
+    border-right: 1px solid $color-white;
+  }
+  .main-store__calendar-table th:first-child,
+  .main-store__calendar-table td:first-child { 
+    border-left: 2px solid $color-theme;
+    padding-right: rem(13);
+  }
+  .main-store__calendar-table th:last-child,
+  .main-store__calendar-table td:last-child { 
+    border-right: 2px solid $color-theme;
+    padding-left: rem(13);
+  }
+  .main-store__calendar-table th:first-child {
+    border-top-left-radius: rem(10);
+  }
+  .main-store__calendar-table th:last-child {
+    border-top-right-radius: rem(10);
+  }
+  .main-store__calendar-table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: rem(10);
+  }
+  .main-store__calendar-table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: rem(10);
+  }
+  .main-store__calendar-table th:not(:first-child, :last-child) {
+    padding-left: rem(13);
+    padding-right: rem(13);
+  }
+  .main-store__calendar-table td:not(:first-child, :last-child) {
+    padding-left: rem(13);
+    padding-right: rem(13);
+  }
+  .main-store__calendar-table th {
+    background-color: $color-theme;
+    color: $color-white;
+  }
+  .main-store__calendar-table td {
+    position: relative;
+    background-color: $color-white;
+  }
+  .main-store__calendar-table td .ok,
+  .main-store__calendar-table td .ng {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+    content: "";
+  }
+  .main-store__calendar-table td .ok {
+    width: rem(27);
+    height: rem(27);
+    border-radius: 50%;
+    background-color: #A0DA28;
+  }
+  .main-store__calendar-table td .ng {
+    width: rem(26);
+    height: rem(3);
+    border-radius: rem(2);
+    background-color: $color-black;
+  }
+
+  .main-store__contents {
+    padding: rem(30) rem(44);
+    border: 2px solid $color-theme;
+    border-radius: rem(10);
+    background-color: $color-white;
+    font-weight: $bold;
+    margin-top: rem(30);
+  }
+  .main-store__content {
+    display: flex;
+    align-items: center;
+    gap: rem(24);
+    letter-spacing: 0.05em;
+  }
+  .main-store__content:not(:last-child) {
+    padding-bottom: rem(20);
+    border-bottom: 1px solid rgba($color: $color-black, $alpha: 0.4);
+  }
+  .main-store__content:not(:first-child) {
+    padding-top: rem(20);
+  }
+  .main-store__content-icon {
+    width: rem(33);
+  }
+  .main-store__content-head {
+    font-size: rem(30);
+    // margin-left: rem(24);
+    flex-basis: rem(136);
+    color: $color-theme;
+  }
+  .main-store__content-description {
+    font-size: rem(28);
+    // margin-left: rem(27);
+  }
+
+  .main-store__btn {
+    width: rem(584);
+    margin-right:auto;
+    margin-left:auto;
+    margin-top: rem(60);
+  }
+
+
+  .flow {
+    background-color: rgba($color: $color-yellow, $alpha: 0.2);
+  }
+  .flow__container {
+    position: relative;
+    padding-top: rem(120);
+    padding-bottom: rem(116);
+  }
+  .flow__top-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: rem(303);
+    z-index: 1;
+  }
+  .flow__bottom-accent-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: rem(303);
+    z-index: 1;
+  }
+
+  .flow__contents {
+    position: relative;
+    z-index: 2;
+  }
+  .flow__contents::after {
+    position: absolute;
+    content: "";
+    top:1%;
+    left: rem(48);
+    z-index: -1;
+    height: 75%;
+    width: rem(2);
+    background-color: $color-brown;
+  }
+  .flow__item {
+    display: flex;
+    gap: rem(30);
+    align-items: flex-start;
+  }
+  .flow__item:not(:last-child) {
+    margin-bottom: rem(40);
+  }
+  .flow__item-number {
+    flex-basis: rem(98);
+    flex-shrink: 0;
+  }
+
+  .flow__item-main {
+    padding-top: rem(15);
+  }
+  .flow__item-head {
+    font-size: rem(40);
+    font-weight: $bold;
+    color: $color-theme;
+
+  }
+  .flow__item-image {
+    margin-top: rem(20);
+    border-radius: rem(16);
+    overflow: hidden;
+  }
+  .flow__item-image img {
+    aspect-ratio: 544 / 363;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .flow__item-description {
+    margin-top: rem(20);
+    font-size: rem(30);
+    font-weight: $medium;
+  }
+
+  .faq {
+    background: $color-white;
+    background-image: url(https://taiyo-kumagaya.com/wp-new/wp-content/uploads/2025/12/math-clip-bg-image.webp);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    overflow: hidden;
+    padding-top: rem(100);
+    padding-bottom: rem(120);
+    position: relative;
+  }
+  .faq::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,75%);
+    width: rem(1052);
+    height: rem(365);
+    background-color: #FFFCE5;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0 rem(-10) rem(25) 0 rgba(0, 0, 0, 0.06);
+  }
+  .faq__item:not(:last-child) {
+    margin-bottom: rem(32);
+  }
+  .faq__item-head {
+    display: flex;
+    border-radius: rem(10);
+    overflow: hidden;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  .faq__item-head:hover {
+    opacity: 0.8;
+  }
+  .faq__icon {
+    padding: rem(12) rem(24);
+    background: $color-lp2-btn-line;
+    flex-basis: rem(80);
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .faq__item-head-content {
+    padding: rem(24) rem(20);
+    background: #ECF8D4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: rem(18);
+    width: 100%;
+  }
+  .faq__item-head-text {
+    font-size: rem(30);
+    font-weight: $bold;
+  }
+  .faq__item-head-cross {
+    width: rem(40);
+    height: rem(40);
+    position: relative;
+    flex-shrink: 0;
+  }
+  .faq__item-head-cross::before,
+  .faq__item-head-cross::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: rem(4);
+    border-radius: rem(2);
+    background-color: $color-theme;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: transform 0.3s ease;
+  }
+  .faq__item-head-cross::after {
+    transform: translate(-50%,-50%) rotate(90deg);
+  }
+  .faq__item.is-open .faq__item-head-cross::after {
+    transform: translate(-50%,-50%) rotate(0deg);
+  }
+  .faq__item-body {
+    margin-top: rem(24);
+    font-size: rem(30);
+    font-weight: $medium;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+  .faq__item-description {
+    padding-bottom: rem(10);
+  }
 }

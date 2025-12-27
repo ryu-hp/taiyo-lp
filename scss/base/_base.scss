@@ -3,17 +3,16 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
-  letter-spacing: 0.05em;
+  line-height: calc(45 / 28);
+  color: $color-black;
+  font-family: $base-font-family;
   @media screen and (max-width:800px) {
     font-size: calc(16 / 800 * 100vw);
   }
 }
 
-body {
-  font-family: $base-font-family;
-  color: $color-black;
-  line-height: calc(36 / 16);
-  letter-spacing: -0.02em;
+* {
+  letter-spacing: 0.05em;
 }
 
 img {
@@ -99,7 +98,7 @@ main {
 }
 .yellow-line {
   text-decoration: underline;
-  text-decoration-color: $color-yellow;
+  text-decoration-color: rgba($color: $color-yellow, $alpha: 0.6);
   text-underline-offset: rem(-4);
   text-decoration-thickness: rem(16);
 }
@@ -119,8 +118,10 @@ main {
 .lp2-btn-text {
   color: #FFF;
   text-shadow: 0 1px 6px rgba(0, 0, 0, 0.20);
-  font-size: rem(30);
+  font-size: rem(34);
   font-weight: $bold;
+  letter-spacing: 0.05em;
+  line-height: 1;
 }
 .lp2-btn-map .lp2-btn-text,
 .lp2-btn-line .lp2-btn-text {
@@ -141,14 +142,14 @@ main {
   background: $color-lp2-btn-map;
   gap: rem(30);
   box-shadow: 0 rem(8) 0 0 #6F5508;
-  padding: rem(30) rem(20);
+  padding: rem(32) rem(20) rem(30);
 }
 .lp2-btn.lp2-btn-line {
   width: rem(584);
   border-radius: rem(100);
   background: $color-lp2-btn-line;
   gap: rem(25.8);
-  padding: rem(30) rem(20);
+  padding: rem(32) rem(20) rem(30);
   box-shadow: 0 rem(8) 0 0 #008F54;
 }
 

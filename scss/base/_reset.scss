@@ -133,3 +133,8 @@ div#main {
     float: none;
     max-width: 100%;
 }
+
+#header,
+.main_img {
+  display: none !important;
+}
