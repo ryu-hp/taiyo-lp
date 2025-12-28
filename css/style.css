@@ -579,8 +579,8 @@ MV
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
   background-color: #ffffff;
-  border-radius: 40px;
-  border-width: 2px;
+  border-radius: 2.5rem;
+  border-width: 0.125rem;
   border-style: solid;
   left: 50%;
   top: 0;
@@ -594,12 +594,12 @@ MV
 #lp2 .mini-cta__btn .lp2-btn-hukidasi::after {
   content: "";
   position: absolute;
-  bottom: -11px;
+  bottom: -0.6875rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 20px;
-  height: 11px;
+  width: 1.25rem;
+  height: 0.6875rem;
   z-index: 1;
   clip-path: polygon(0 0, 100% 0, 50% 100%);
 }
@@ -2081,8 +2081,9 @@ MV
 #lp2 .main-store__calendar-table th,
 #lp2 .main-store__calendar-table td {
   font-weight: 700;
-  padding: 1.5rem 1.5rem;
+  padding: 1.5rem 1rem;
   font-size: 1.75rem;
+  text-align: center;
 }
 #lp2 .main-store__calendar-table th {
   border-top: 2px solid #008F54;
@@ -2098,12 +2099,13 @@ MV
 #lp2 .main-store__calendar-table th:first-child,
 #lp2 .main-store__calendar-table td:first-child {
   border-left: 2px solid #008F54;
-  padding-right: 0.8125rem;
+  padding-right: 0.5rem;
+  text-align: left;
 }
 #lp2 .main-store__calendar-table th:last-child,
 #lp2 .main-store__calendar-table td:last-child {
   border-right: 2px solid #008F54;
-  padding-left: 0.8125rem;
+  padding-left: 0.5rem;
 }
 #lp2 .main-store__calendar-table th:first-child {
   border-top-left-radius: 0.625rem;
@@ -2118,12 +2120,12 @@ MV
   border-bottom-right-radius: 0.625rem;
 }
 #lp2 .main-store__calendar-table th:not(:first-child, :last-child) {
-  padding-left: 0.8125rem;
-  padding-right: 0.8125rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 #lp2 .main-store__calendar-table td:not(:first-child, :last-child) {
-  padding-left: 0.8125rem;
-  padding-right: 0.8125rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 #lp2 .main-store__calendar-table th {
   background-color: #008F54;
@@ -2156,7 +2158,7 @@ MV
   background-color: #222;
 }
 #lp2 .main-store__contents {
-  padding: 1.875rem 2.75rem;
+  padding: 1.875rem 1.5rem;
   border: 2px solid #008F54;
   border-radius: 0.625rem;
   background-color: #ffffff;

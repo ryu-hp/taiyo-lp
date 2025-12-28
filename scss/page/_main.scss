@@ -158,8 +158,8 @@ MV
     padding-top: rem(2);
     padding-bottom: rem(2);
     background-color: $color-white;
-    border-radius: 40px;
-    border-width: 2px;
+    border-radius: rem(40);
+    border-width: rem(2);
     border-style: solid;
     left: 50%;
     top: 0;
@@ -172,11 +172,11 @@ MV
   .mini-cta__btn .lp2-btn-hukidasi::after {
     content: "";
     position: absolute;
-    bottom: -11px;
+    bottom: rem(-11);
     left: 50%;
     transform: translateX(-50%);
-    width: 20px;
-    height: 11px;
+    width: rem(20);
+    height: rem(11);
     z-index: 1;
     clip-path: polygon(0 0, 100% 0, 50% 100%);
   } 
@@ -1528,8 +1528,9 @@ MV
   .main-store__calendar-table th,
   .main-store__calendar-table td {
     font-weight: $bold;
-    padding: rem(24) rem(24); 
+    padding: rem(24) rem(16); 
     font-size: rem(28);
+    text-align: center;
   }
   .main-store__calendar-table th {
     border-top: 2px solid $color-theme;
@@ -1545,12 +1546,13 @@ MV
   .main-store__calendar-table th:first-child,
   .main-store__calendar-table td:first-child { 
     border-left: 2px solid $color-theme;
-    padding-right: rem(13);
+    padding-right: rem(8);
+    text-align: left;
   }
   .main-store__calendar-table th:last-child,
   .main-store__calendar-table td:last-child { 
     border-right: 2px solid $color-theme;
-    padding-left: rem(13);
+    padding-left: rem(8);
   }
   .main-store__calendar-table th:first-child {
     border-top-left-radius: rem(10);
@@ -1565,12 +1567,12 @@ MV
     border-bottom-right-radius: rem(10);
   }
   .main-store__calendar-table th:not(:first-child, :last-child) {
-    padding-left: rem(13);
-    padding-right: rem(13);
+    padding-left: rem(8);
+    padding-right: rem(8);
   }
   .main-store__calendar-table td:not(:first-child, :last-child) {
-    padding-left: rem(13);
-    padding-right: rem(13);
+    padding-left: rem(8);
+    padding-right: rem(8);
   }
   .main-store__calendar-table th {
     background-color: $color-theme;
@@ -1603,7 +1605,7 @@ MV
   }
 
   .main-store__contents {
-    padding: rem(30) rem(44);
+    padding: rem(30) rem(24);
     border: 2px solid $color-theme;
     border-radius: rem(10);
     background-color: $color-white;
