@@ -8,7 +8,7 @@ html {
 }
 @media screen and (max-width: 800px) {
   html {
-    font-size: 2vw;
+    font-size: 2.1052631579vw;
   }
 }
 
@@ -114,6 +114,10 @@ main {
 
 .color-green {
   color: #008F54;
+}
+
+.upper {
+  text-transform: uppercase;
 }
 
 .lp2-btn {
@@ -361,6 +365,7 @@ div#main {
 }
 
 #header,
+#footer,
 .main_img {
   display: none !important;
 }
@@ -1921,7 +1926,7 @@ MV
 #lp2 .map-cta-02__description {
   text-align: center;
   font-size: 2.5rem;
-  font-weight: normal;
+  font-weight: 700;
 }
 #lp2 .map-cta-02__label-contents {
   margin-top: 1.875rem;
@@ -2395,4 +2400,64 @@ MV
 }
 #lp2 .faq__item-description {
   padding-bottom: 0.625rem;
+}
+#lp2 .lp2-footer {
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  position: relative;
+  padding: 7.5rem 0 13.75rem;
+}
+#lp2 footer.lp2-footer::after {
+  display: none;
+}
+#lp2 .lp2-footer__contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3.75rem;
+}
+#lp2 .lp2-footer__head {
+  text-align: center;
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+#lp2 .lp2-footer__logo {
+  width: 36.1875rem;
+}
+#lp2 .lp2-footer__copyright {
+  font-size: 1.5625rem;
+  font-weight: 500;
+  text-align: center;
+}
+#lp2 .fix-area {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: opacity 0.3s ease, visibility 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, visibility 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+#lp2 .fix-area.is-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+#lp2 .fix-area .mini-cta {
+  padding: 2rem 0 1rem;
 }

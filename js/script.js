@@ -114,4 +114,26 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // fix-areaの表示制御（mvセクションが画面上部より上にスクロールしたら表示）
+  const mvSection = document.querySelector('.mv');
+  const fixArea = document.querySelector('.fix-area');
+  
+  if (mvSection && fixArea) {
+    const checkScroll = () => {
+      const mvBottom = mvSection.getBoundingClientRect().bottom;
+      
+      // mvセクションの下端が画面上部より上にある場合（mvセクションが画面外に出た場合）
+      if (mvBottom <= 0) {
+        fixArea.classList.add('is-visible');
+      } else {
+        fixArea.classList.remove('is-visible');
+      }
+    };
+    
+    // スクロールイベント
+    window.addEventListener('scroll', checkScroll);
+    // 初期チェック
+    checkScroll();
+  }
 });
