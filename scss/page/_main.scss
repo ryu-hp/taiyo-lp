@@ -123,6 +123,9 @@ MV
   .mini-cta__btn {
     width: rem(326);
   }
+  .lp2-btn-contents {
+    position: relative;
+  }
   .mini-cta__btn .lp2-btn {
     width: 100%;
     border-radius: rem(70);
@@ -204,6 +207,20 @@ MV
     color: $color-orange-text;
   }
   .mini-cta__btn .lp2-btn-line .lp2-btn-hukidasi {
+    border-color: $color-theme;
+    color: $color-theme;
+  }
+  .mini-cta__btn .lp2-btn-tel + .lp2-btn-hukidasi::after {
+    background-color: $color-orange;
+  }
+  .mini-cta__btn .lp2-btn-line + .lp2-btn-hukidasi::after {
+    background-color: $color-theme;
+  }
+  .mini-cta__btn .lp2-btn-tel + .lp2-btn-hukidasi {
+    border-color: $color-orange;
+    color: $color-orange-text;
+  }
+  .mini-cta__btn .lp2-btn-line + .lp2-btn-hukidasi {
     border-color: $color-theme;
     color: $color-theme;
   }
@@ -342,33 +359,39 @@ MV
     display: flex;
     justify-content: center;
     align-items: center;
-    border: rem(5) solid $color-white;
+    border: rem(5) solid $color-theme;
     border-radius: rem(16) rem(16) 0 0;
     font-size: rem(48);
     font-weight: $bold;
     line-height: 180%;
-    background-color: #fff;
-    border-radius: rem(16) rem(16) 0 0;
-    background: rgba(116, 116, 110, 0.20);
-    color: $color-black;
+    background-color: $color-theme;
+    // background: rgba(116, 116, 110, 0.20);
+    color: $color-white;
+    box-shadow: 0 rem(10) rem(10) 0 rgba(0, 0, 0, 0.10);
   }
   .sign__tab.active {
     background-color: $color-white;
     color: $color-theme;
     position: relative;
     z-index: 1;
+    opacity: 1;
+    border-color: $color-white;
   }
   .sign__tab-contents {
     margin-left: calc(-1 * $padding-pc);
-    width: rem(760);
+    width: rem(800);
     background-color: $color-white;
-    box-shadow: 0 rem(10) rem(20) 0 rgba(0, 0, 0, 0.10);
+    box-shadow: 0 rem(10) rem(10) 0 rgba(0, 0, 0, 0.10);
     padding-top: rem(40);
     padding-bottom: rem(50);
-    padding-left: $padding-sp;
-    padding-right: $padding-sp;
+    padding-left: $padding-pc;
+    padding-right: $padding-pc;
     margin-top: rem(-5);
+    position: relative;
+    z-index: 1;
     @include mq(md) {
+      padding-left: $padding-sp;
+      padding-right: $padding-sp;
       width: 100vw;
       margin-left: calc(50% - 50vw);
     }
@@ -459,7 +482,7 @@ MV
   .sign__tab-content-list-item::before {
     position: absolute;
     content: "";
-    top: rem(9);
+    top: rem(4);
     left: 0;
     background-size: contain;
     background-position: center;
@@ -502,10 +525,13 @@ MV
     display: inline-block;
     margin-left: rem(10);
     margin-right: rem(14);
+    width: rem(17);
+    height: 100%;
   }
   .sign__bottom-main-text-item--1 svg {
     vertical-align: sub;
-    width: rem(17);
+    width: 100%;
+    height: 100%;
   }
 
   /* ===
@@ -848,6 +874,9 @@ MV
     font-size: rem(50);
     line-height: rem(57);
     font-weight: $bold;
+    @include mq(md) {
+      font-size: rem(48);
+    }
   }
   .cta-02__head-main .large {
     font-size: 1.2em;
@@ -1112,6 +1141,9 @@ MV
     top: 50%;
     transform: translateY(-60%);
     left: rem(-18);
+    @include mq(md) {
+      width: rem(88);
+    }
   }
   .menu__card--popular .menu__card-hukidashi {
     background-color: $color-theme;
@@ -1809,15 +1841,19 @@ MV
     transform: translate(-50%,-50%) rotate(0deg);
   }
   .faq__item-body {
-    margin-top: rem(24);
+    // padding-top: rem(24);
     font-size: rem(30);
     font-weight: $medium;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease;
+    background-color: #f6fff1;
+    border-bottom-left-radius: rem(10);
+    border-bottom-right-radius: rem(10);
   }
   .faq__item-description {
     padding-bottom: rem(10);
+    padding: rem(24) rem(20) rem(20);
   }
 
   .lp2-footer {

@@ -157,6 +157,49 @@ main {
   box-shadow: 0 rem(8) 0 0 #008F54;
 }
 
+.lp2-btn-hukidasi {
+  font-weight: $bold;
+}
+
+.lp2-btn-tel + .lp2-btn-hukidasi::after {
+  background-color: $color-orange;
+}
+.lp2-btn-line + .lp2-btn-hukidasi::after {
+  background-color: $color-theme;
+}
+.lp2-btn-tel + .lp2-btn-hukidasi {
+  border-color: $color-orange;
+  color: $color-orange-text;
+}
+.lp2-btn-line + .lp2-btn-hukidasi {
+  border-color: $color-theme;
+  color: $color-theme;
+}
+
+.shain {
+  position: relative;
+  overflow: hidden;
+}
+.shain::after {
+  animation: 1.5s 0s shine linear infinite;
+	background: linear-gradient(to right, rgba(255,255,255,0) 25%, rgba(255,255,255,.6) 50%, rgba(255, 255, 255, 0) 75%);
+	content: '';
+	height: 100%;
+	left: -100%;
+	position: absolute;
+	top: 0;
+	transform: skewX(-15deg);
+	width: 100%;
+}
+@keyframes shine {
+	20% {
+		left: 100%;
+	}
+	100% {
+		left: 100%;
+	}
+}
+
 // セクションタイトル
 .section-title {
   display: flex;
